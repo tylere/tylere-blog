@@ -20,6 +20,7 @@ website:
   description: "Tyler's personal blog."
   twitter-card: true
   open-graph: true
+  reader-mode: true
   repo-branch: master
   repo-url: "https://github.com/tylere/tylere-blog"
   repo-actions: [issue]
