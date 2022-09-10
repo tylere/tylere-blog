@@ -8,6 +8,7 @@ on:
     - cron: '0 * * * *'
 jobs:
   deploy:
+    environment: CI
     runs-on: ubuntu-latest
     steps:
       - name: Write Earth Engine credentials file
