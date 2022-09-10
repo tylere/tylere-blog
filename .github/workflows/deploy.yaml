@@ -16,6 +16,5 @@ jobs:
           mkdir -p /home/runner/.config/earthengine
           ls -l /home/runner/.config/earthengine
           echo ${{ secrets.SECRET_CREDENTIALS }} | base64 --decode > /home/runner/.config/earthengine/credentials
-          ls -l /home/runner/.config/earthengine
       - uses: fastai/workflows/quarto-ghp@master
         with: {pre: 1}
