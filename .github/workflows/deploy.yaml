@@ -13,11 +13,7 @@ jobs:
     steps:
       - name: Write Earth Engine credentials file
         run: |
-          echo "DEBUG_deploy"
-          echo $GEE_PRIVATE_KEY
           mkdir -p /home/runner/.config/earthengine
           echo ${{ secrets.SECRET_CREDENTIALS_JSON }} | base64 --decode > /home/runner/.config/earthengine/private-key.json
-          pwd
-          ls -l
       - uses: fastai/workflows/quarto-ghp@master
         with: {pre: 1}
