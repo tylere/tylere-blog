@@ -6,8 +6,6 @@ on:
   schedule:
     # Runs "at 0 minutes past the hour" (see https://crontab.guru)
     - cron: '0 * * * *'
-env:
-  GEE_PRIVATE_KEY: private-key.json
 jobs:
   deploy:
     environment: CI
@@ -15,9 +13,10 @@ jobs:
     steps:
       - name: Write Earth Engine credentials file
         run: |
-          echo "DEBUGZZZZ"
+          echo "DEBUG_deploy"
           echo $GEE_PRIVATE_KEY
-          echo ${{ secrets.SECRET_CREDENTIALS_JSON }} | base64 --decode > $GEE_PRIVATE_KEY
+          mkdir -p /home/runner/.config/earthengine
+          echo ${{ secrets.SECRET_CREDENTIALS_JSON }} | base64 --decode > /home/runner/.config/earthengine/private-key.json
           pwd
           ls -l
       - uses: fastai/workflows/quarto-ghp@master
