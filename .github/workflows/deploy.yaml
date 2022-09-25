@@ -15,7 +15,10 @@ jobs:
     steps:
       - name: Write Earth Engine credentials file
         run: |
+          echo "DEBUGZZZZ"
           echo $GEE_PRIVATE_KEY
           echo ${{ secrets.SECRET_CREDENTIALS_JSON }} | base64 --decode > $GEE_PRIVATE_KEY
+          pwd
+          ls -l
       - uses: fastai/workflows/quarto-ghp@master
         with: {pre: 1}
