@@ -17,7 +17,15 @@ pip install tylere_blog
 Fill me in please! Don’t forget code examples:
 
 ``` python
-1+1
+1+2
 ```
 
     2
+
+``` python
+import datetime
+```
+
+``` python
+print(f'time = {datetime.datetime.now()}')
+```

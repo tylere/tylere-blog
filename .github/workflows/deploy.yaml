@@ -10,10 +10,12 @@ jobs:
   deploy:
     environment: CI
     runs-on: ubuntu-latest
+    env:
+      GEE_PRIVATE_KEY: /home/runner/.config/earthengine/private-key.json
     steps:
       - name: Write Earth Engine credentials file
         run: |
           mkdir -p /home/runner/.config/earthengine
-          echo ${{ secrets.SECRET_CREDENTIALS_JSON }} | base64 --decode > /home/runner/.config/earthengine/private-key.json
+          echo ${{ secrets.SECRET_CREDENTIALS_JSON }} | base64 --decode > $GEE_PRIVATE_KEY
       - uses: fastai/workflows/quarto-ghp@master
         with: {pre: 1}
