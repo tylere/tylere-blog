@@ -12,3 +12,4 @@ jobs:
           mkdir -p /home/runner/.config/earthengine
           echo ${{ secrets.SECRET_CREDENTIALS_JSON }} | base64 --decode > $GEE_PRIVATE_KEY
       - uses: fastai/workflows/nbdev-ci@master
+        with: {pre: 1}
