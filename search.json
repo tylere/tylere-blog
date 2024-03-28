@@ -1,0 +1,92 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tyler’s blog",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "Tyler's blog"
+    ]
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Tyler’s blog",
+    "section": "About",
+    "text": "About\n\nLinkedIn\nGitHub\nMastadon\nTwitter",
+    "crumbs": [
+      "Tyler's blog"
+    ]
+  },
+  {
+    "objectID": "index.html#regular-update-test",
+    "href": "index.html#regular-update-test",
+    "title": "Tyler’s blog",
+    "section": "Regular update test",
+    "text": "Regular update test\nThis page is generated on a regular basis, using nbdev and GitHub actions.\n\nimport datetime\n\n\nprint(f'This page was last regenerated at:\\n'\n      f'{datetime.datetime.now().strftime(\"%b %d %Y %H:%M:%S\")} UTC')\n\nThis page was last regenerated at:\nMar 28 2024 19:05:24 UTC",
+    "crumbs": [
+      "Tyler's blog"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "test_dependencies.html",
+    "href": "test_dependencies.html",
+    "title": "Test dependencies",
+    "section": "",
+    "text": "from IPython import display\nimport datetime\nimport ee\nimport os",
+    "crumbs": [
+      "Test dependencies"
+    ]
+  },
+  {
+    "objectID": "test_dependencies.html#test-earth-engine",
+    "href": "test_dependencies.html#test-earth-engine",
+    "title": "Test dependencies",
+    "section": "Test Earth Engine",
+    "text": "Test Earth Engine\n\nee.Initialize()\n\n\nimg = ee.Image(\"CGIAR/SRTM90_V4\")\nprint(img.getInfo())\n\n{'type': 'Image', 'bands': [{'id': 'elevation', 'data_type': {'type': 'PixelType', 'precision': 'int', 'min': -32768, 'max': 32767}, 'dimensions': [432000, 144000], 'crs': 'EPSG:4326', 'crs_transform': [0.000833333333333, 0, -180, 0, -0.000833333333333, 60]}], 'id': 'CGIAR/SRTM90_V4', 'version': 1641990053291277, 'properties': {'system:visualization_0_min': '-100.0', 'type_name': 'Image', 'keywords': ['cgiar', 'dem', 'elevation', 'geophysical', 'srtm', 'topography'], 'thumb': 'https://mw1.google.com/ges/dd/images/SRTM90_V4_thumb.png', 'description': '&lt;p&gt;The Shuttle Radar Topography Mission (SRTM) digital\\nelevation dataset was originally produced to provide consistent,\\nhigh-quality elevation data at near global scope. This version\\nof the SRTM digital elevation data has been processed to fill data\\nvoids, and to facilitate its ease of use.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Provider: &lt;a href=\"https://srtm.csi.cgiar.org/\"&gt;NASA/CGIAR&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;Bands&lt;/b&gt;&lt;table class=\"eecat\"&gt;&lt;tr&gt;&lt;th scope=\"col\"&gt;Name&lt;/th&gt;&lt;th scope=\"col\"&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;elevation&lt;/td&gt;&lt;td&gt;&lt;p&gt;Elevation&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Terms of Use&lt;/b&gt;&lt;br&gt;&lt;p&gt;DISTRIBUTION. Users are prohibited from any commercial, non-free resale, or\\nredistribution without explicit written permission from CIAT. Users should\\nacknowledge CIAT as the source used in the creation of any reports,\\npublications, new datasets, derived products, or services resulting from the\\nuse of this dataset. CIAT also request reprints of any publications and\\nnotification of any redistributing efforts. For commercial access to\\nthe data, send requests to &lt;a href=\"mailto:a.jarvis@cgiar.org\"&gt;Andy Jarvis&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;NO WARRANTY OR LIABILITY. CIAT provides these data without any warranty of\\nany kind whatsoever, either express or implied, including warranties of\\nmerchantability and fitness for a particular purpose. CIAT shall not be\\nliable for incidental, consequential, or special damages arising out of\\nthe use of any data.&lt;/p&gt;&lt;p&gt;ACKNOWLEDGMENT AND CITATION. Any users are kindly asked to cite this data\\nin any published material produced using this data, and if possible link\\nweb pages to the &lt;a href=\"https://srtm.csi.cgiar.org\"&gt;CIAT-CSI SRTM website&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Suggested citation(s)&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Jarvis, A., H.I. Reuter, A. Nelson, E. Guevara. 2008. Hole-filled\\nSRTM for the globe Version 4, available from the CGIAR-CSI SRTM\\n90m Database: https://srtm.csi.cgiar.org.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;style&gt;\\n  table.eecat {\\n  border: 1px solid black;\\n  border-collapse: collapse;\\n  font-size: 13px;\\n  }\\n  table.eecat td, tr, th {\\n  text-align: left; vertical-align: top;\\n  border: 1px solid gray; padding: 3px;\\n  }\\n  td.nobreak { white-space: nowrap; }\\n&lt;/style&gt;', 'source_tags': ['cgiar'], 'visualization_0_max': '8000.0', 'title': 'SRTM Digital Elevation Data Version 4', 'product_tags': ['srtm', 'elevation', 'topography', 'dem', 'geophysical'], 'provider': 'NASA/CGIAR', 'visualization_0_min': '-100.0', 'visualization_0_name': 'Elevation', 'date_range': [950227200000, 951177600000], 'system:visualization_0_gamma': 1.6, 'period': 0, 'system:visualization_0_bands': 'elevation', 'system:time_end': 951177600000, 'provider_url': 'https://srtm.csi.cgiar.org/', 'sample': 'https://mw1.google.com/ges/dd/images/SRTM90_V4_sample.png', 'tags': ['cgiar', 'dem', 'elevation', 'geophysical', 'srtm', 'topography'], 'system:time_start': 950227200000, 'system:visualization_0_max': '8000.0', 'system:visualization_0_name': 'Elevation', 'system:asset_size': 18827626666, 'visualization_0_bands': 'elevation'}}\n\n\n\nurl = img.getThumbUrl({'min':0, 'max':4000, 'dimensions':500})\nprint(f'url = {url}')\n\nurl = https://earthengine.googleapis.com/v1/projects/earthengine-legacy/thumbnails/7c4b700bb4c9c02516614e1305954b96-cb6cfbaf2a2dea2724d456baa3de079b:getPixels\n\n\n\ndisplay.Image(url=url, format='png', embed=True)",
+    "crumbs": [
+      "Test dependencies"
+    ]
+  },
+  {
+    "objectID": "test_dependencies.html#test-ipywidgets",
+    "href": "test_dependencies.html#test-ipywidgets",
+    "title": "Test dependencies",
+    "section": "Test ipywidgets",
+    "text": "Test ipywidgets\n\nimport ipywidgets as widgets\n\n\nwidgets.IntSlider()",
+    "crumbs": [
+      "Test dependencies"
+    ]
+  },
+  {
+    "objectID": "test_dependencies.html#test-ipyleaflet",
+    "href": "test_dependencies.html#test-ipyleaflet",
+    "title": "Test dependencies",
+    "section": "Test ipyleaflet",
+    "text": "Test ipyleaflet\n\nimport ipyleaflet\n\n\nm = ipyleaflet.Map(\n    basemap=ipyleaflet.basemap_to_tiles(\n        ipyleaflet.basemaps.OpenStreetMap.Mapnik\n    ),\n    center=(48.204793, 350.121558),\n    zoom=3\n    )\nm",
+    "crumbs": [
+      "Test dependencies"
+    ]
+  },
+  {
+    "objectID": "test_dependencies.html#regular-update-test",
+    "href": "test_dependencies.html#regular-update-test",
+    "title": "Test dependencies",
+    "section": "Regular update test",
+    "text": "Regular update test\nThis page is generated on a regular basis, using nbdev and GitHub actions.\n\nimport datetime\n\n\nprint(f'This page was last regenerated at:\\n'\n      f'{datetime.datetime.now().strftime(\"%b %d %Y %H:%M:%S\")} UTC')\n\nThis page was last regenerated at:\nJan 12 2023 16:30:17 UTC",
+    "crumbs": [
+      "Test dependencies"
+    ]
+  }
+]
